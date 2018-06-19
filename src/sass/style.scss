@@ -1,0 +1,27 @@
+$bgColor: #e0e0e0;
+@mixin text {
+    font:{
+        family:  Roboto, Arial, sans-serif;
+        style: italic;
+        weight: normal;
+        variant: small-caps;
+    }
+    text-align: center;
+}
+
+body{
+    background: $bgColor;
+}
+
+
+h1{
+    color: rgb(98, 42, 187);
+    @include text;
+}
+
+
+.p-graf {
+    @include text;
+    color: #370f38;
+    text-decoration: line-through;
+}
